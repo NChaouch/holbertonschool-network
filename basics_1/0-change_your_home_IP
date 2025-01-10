@@ -4,6 +4,6 @@ cp /etc/hosts /etc/hosts.backup
 # rm entries for localhost of /etc/hosts
 echo -n > /etc/hosts
 # add new entrie localhost resolving to 127.0.0.1
-echo "127.0.0.1 localhost" >> /etc/hosts
+echo "127.0.0.2 localhost" >> /etc/hosts
 # add new entrie facebook resolving to 8.8.8.8
 echo "8.8.8.8 facebook.com" >> /etc/hosts
