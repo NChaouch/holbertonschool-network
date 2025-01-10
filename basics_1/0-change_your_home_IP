@@ -2,9 +2,7 @@
 # save the current /etc/hosts file to /etc/hosts.backup
 cp /etc/hosts /etc/hosts.backup
 # rm entries for localhost of /etc/hosts
-sed -i '/localhost/d' /etc/hosts
-# rm entries for facebook of /etc/hosts
-sed -i '/facebook\.com/d' /etc/hosts
+echo -n > /etc/hosts
 # add new entrie localhost resolving to 127.0.0.1
 echo "127.0.0.1 localhost" >> /etc/hosts
 # add new entrie facebook resolving to 8.8.8.8
